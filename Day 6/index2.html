@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % & more</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 12px;
+    }
+    .box{
+        border: 2px solid black;
+        width: 80vw;
+        margin: auto;
+        background-color: aqua;
+        box-sizing: border-box;
+    }
+    .container{
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        /* height: 100vh; */
+        margin: 23px auto;
+        min-height: 80vh;
+        background-color: aqua;
+        /* font-size: 18px; */
+    }
+    .container p{
+        font-size: 2rem;
+        border: 2px solid red;
+        /* width: 50%; */
+    }
+    .cont{
+        border: 2px solid black;
+        margin: 23px auto;
+        box-sizing: border-box;
+        /* color: rgb(0, 0, 0); */
+        font-size: 22px;
+        width: 100vmin;
+    }
+</style>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cupiditate vero dolore amet assumenda non numquam recusandae incidunt quisquam asperiores beatae aperiam possimus expedita, vel minima eligendi laudantium tenetur consequatur. Ut id libero labore delectus optio perferendis doloribus veniam totam unde sint exercitationem pariatur quidem blanditiis autem placeat, distinctio quis? Non, ipsum beatae. Hic, ullam quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, molestiae libero recusandae laboriosam quasi veritatis, eius architecto in debitis, explicabo accusamus unde cumque? Totam asperiores repellat necessitatibus reiciendis quo dolore fuga, error atque sapiente obcaecati quia soluta qui amet impedit reprehenderit doloremque! Quas totam fugit eligendi, et mollitia eum molestias voluptatibus similique cupiditate aspernatur ipsam ab cumque quo sequi dicta eos quam. </p>
+    </div>
+    <div class="cont">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad recusandae nesciunt explicabo, officia magnam ducimus excepturi eveniet maxime veritatis temporibus quidem.
+    </div>
+</body>
+</html>

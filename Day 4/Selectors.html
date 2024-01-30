@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Css-03</title>
+</head>
+<style>
+    /* Element Selector */
+    /* div{
+        background-color: red;
+    } */
+
+    /* class selector */
+    .red {
+        background-color: red;
+    }
+
+    /* ID selector */
+    #green {
+        background-color: green;
+    }
+
+    /* child selector */
+    div>p {
+        color: blue;
+        background: brown;
+    }
+
+    /* Decendant selector */
+    div p{
+        color: blue;
+        background-color: brown;
+    }
+
+    /* universal selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* psuedo selectors */
+    a:visited{
+        color: red;
+    }
+    a:link{
+        color: green;
+    }
+    a:active{
+        background-color: red;
+    }
+    a:hover{
+        background-color: yellow;
+    }
+    p:first-child{
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <div class="one">
+        <p>I am one</p>
+        <p>I am two</p>
+    </div>
+    <div class="red">
+        I am a div
+        <article>
+            <p>I am a paragraph</p>
+        </article>
+    </div>
+    <div id="green">
+        i am another div
+    </div>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.facebook2.com/">Facebook</a>
+</body>
+
+</html>

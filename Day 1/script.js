@@ -1,0 +1,1 @@
+alert("Welcome to Day 1 of 120 days of becomeing a ful stack web developer")

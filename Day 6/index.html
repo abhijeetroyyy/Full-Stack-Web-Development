@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 | CSS Specificity & Cascade</title>
+</head>
+<style>
+    /* The specificity of this selector in 1 */
+    h1 {
+        color: aqua;
+    }
+
+    h1.yellow {
+        color: yellow;
+    }
+
+    /* The specificity of this selector in 10 */
+    /* .yellow {
+        color: yellow;
+    } */
+
+    /* The specificity of this selector in 10000 if it has important */
+    /* .yellow{
+        color: yellow !important;
+    } */
+
+    /* The specificity of this selector in 10 */
+    .cpurple {
+        color: purple;
+    }
+
+    /*This is example of attributes  The specificity of this selector in 10 */
+    [data-x=a] {
+        color: maroon;
+    }
+    /* The specificity of this selector in 10 */
+    .cred {
+        color: red;
+    }
+
+</style>
+
+<body>
+    <div>
+        <h1  data-x="a" class="yellow cred cpurple">
+            Today is my day 6 of becoming a full stack web developer in 120days
+        </h1>
+    </div>
+</body>
+
+</html>

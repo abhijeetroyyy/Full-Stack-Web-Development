@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designng a card</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        height: 350px;
+        width: 210px;
+        border: 2px solid black;
+        border-radius: 34px;
+        margin: 5px;
+        padding: 5px;
+        background-color: #cadcdc;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        margin: 8px;
+        margin-left: 15px;
+    }
+
+    .buttons {
+
+        /* padding-top: 10px; */
+        display: flex;
+    }
+
+    .abt {
+        height: 19px;
+        width: 74px;
+        border: 2px solid black;
+        border-radius: 37px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .ReadMore {
+        margin: 2px;
+        margin-left: 60px;
+        height: 28px;
+        width: 86px;
+        border: 2px solid;
+        border-radius: 65px;
+        color: blue;
+        background-color: lightblue;
+    }
+
+    .desc {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div>
+            <img class="image" src="logo.jpg" alt="Card">
+        </div>
+        <div class="buttons">
+            <div>
+                <h5 class="abt">Web Dev</h5>
+            </div>
+            <div>
+                <h5 class="abt">BCA</h5>
+            </div>
+        </div>
+        <div>
+            <h4 class="heading">Abhijeet Roy</h4>
+        </div>
+        <div>
+            <p class="Desc">I am learning web development in 120 days</p>
+        </div>
+        <div>
+            <button class="ReadMore">Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>

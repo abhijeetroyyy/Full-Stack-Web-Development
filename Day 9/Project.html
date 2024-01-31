@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Navbar</title>
+</head>
+<style>
+    @media only screen and (min-width:445px) {
+        nav {
+            background-color: blue;
+
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            /* margin: auto; */
+            padding: 7px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 10px;
+            padding-right: 50px;
+        }
+
+        li:nth-child(odd) {
+            color: red;
+            background-color: black;
+        }
+
+        li:nth-child(even) {
+            color: purple;
+            background-color: yellow;
+        }
+    }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: blueviolet;
+            height: 50px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            /* margin: auto; */
+            padding: 7px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 10px;
+            padding-right: 50px;
+        }
+
+        li:nth-child(odd) {
+            color: red;
+            background-color: black;
+        }
+
+        li:nth-child(even) {
+            color: purple;
+            background-color: yellow;
+        }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Animations</title>
+</head>
+<style>
+    .container {
+        background-color: green;
+        height: 80vh;
+        width: 30vw;
+    }
+
+    .box {
+        width: 34px;
+        height: 45px;
+        /* background-color: aqua;   */
+        /* animation: Ar-codringAnimation;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-delay: 2s;
+        animation-direction: alternate-reverse;
+        animation-play-state: running; */
+        animation: Ar-codringAnimation 3s ease-in-out 2s infinite , ar2 3s ease-in-out 3s 1;
+    }
+
+    @keyframes Ar-codringAnimation {
+        from {
+            background-color: red;
+        }
+        to{
+            transform: translate(1000px);
+            background-color: yellow;
+        }
+    }
+    @keyframes ar2 {
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+        }
+        40%{
+            transform: rotate(220deg);
+        }
+        60%{
+            transform: rotate(300deg);
+        }
+        80%{
+            transform: rotate(320deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -22,12 +22,12 @@ let obj ={
     "-": "/" ,
     '/': '**',
 }
-console.log(random);
-if (random < 0.1) { 
-    alert(`the result is ${eval(`${num1}${operation}${num2}`)}`);
-} 
-
-
+    console.log(random);
+    if (random < 0.1) { 
+        alert(`the result is ${eval(`${num1}${operation}${num2}`)}`);
+    } 
+    
+    
 else {
     operation=obj[operation];
     alert(`the result is ${eval(`${num1}${operation}${num2}`)}`);

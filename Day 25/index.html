@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revision</title>
+  </head>
+  <style>
+    .bag {
+      background-color: aqua;
+      border-radius: 15px;
+      height: 30px;
+      width: 150px;
+    }
+    .wishlist {
+      height: 30px;
+      width: 150px;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+    .count {
+      background-color: aqua;
+      height: 30px;
+      width: 150px;
+      border-radius: 15px;
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <button
+        class="bag"
+        onclick="cartquantity=cartquantity+1;
+        document.querySelector('#cardsumarry').innerHTML=`Your bag has ${cartquantity} items`;
+      "
+      >
+        Add to bag
+      </button>
+      <button
+        class="wishlist"
+        onclick="cartquantity=cartquantity-1;
+      document.querySelector('#cardsumarry').innerHTML=`Your bag has ${cartquantity} items`;
+    "
+      >
+        Move to wishlist
+      </button>
+      <button
+        class="count"
+        onclick="cartquantity=cartquantity+2;
+      document.querySelector('#cardsumarry').innerHTML=`Your bag has ${cartquantity} items`;
+    "
+      >
+        Add 1+1 sale item
+      </button>
+    </div>
+    <h1 id="cardsumarry">Your bag has 0 items</h1>
+    <script src="scripts.js"></script>
+  </body>
+</html>

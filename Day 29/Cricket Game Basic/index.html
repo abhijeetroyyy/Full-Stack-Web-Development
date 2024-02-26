@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket Game</title>
+</head>
+<style>
+  body {
+    text-align: center;
+  }
+
+  .butt {
+    margin: 5px;
+  }
+</style>
+
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <div class="button-container">
+    <button class="butt" onclick="
+        const user_choise_message=`bat`;
+        genaratecomputerchoise();
+        let  result_message;
+        if(computer_choise===`bat`){
+        result_message=(`its a tie`);
+        }
+        else if(computer_choise===`stump`){
+        result_message=('computer has won');
+        }
+        else if(computer_choise===`ball`){
+        result_message=('you have won');
+        }
+        alert(`you have chossen ${user_choise_message}  and the result is ${result_message}`);
+
+        ">
+      Bat
+    </button>
+    <button class="butt" onclick="
+        const user_choise_messagee=`ball`;
+        genaratecomputerchoise();
+        if(computer_choise===`bat`){
+        result_message=(`computer have won`);
+        }
+        else if(computer_choise===`stump`){
+        result_message=('you have won');
+        }
+        else if(computer_choise===`ball`){
+        result_message=('its a tie');
+        }
+        alert(`you have chossen ${user_choise_message} and the result is ${result_message}`);
+
+        ">Ball</button>
+    <button class="butt" onclick="
+        user_choise_message=`Stump`;
+        genaratecomputerchoise();
+        if(computer_choise===`bat`){
+        result_message=(`user have won`);
+        }
+        else if(computer_choise===`stump`){
+        result_message=('Its a tie');
+        }
+        else if(computer_choise===`ball`){
+        result_message=('computer has won');
+        }
+        alert(`you have chossen ${user_choise_message}  and the result is ${result_message}`);
+
+        ">Stump</button>
+  </div>
+  <script>
+    let computer_choise;
+    function genaratecomputerchoise() {
+      let rand = Math.random() * 3;
+
+      if (rand > 0 && rand <= 1) {
+        computer_choise = 'bat';
+      }
+      else if (rand > 1 && rand <= 2) {
+        computer_choise = 'ball';
+
+      }
+      else if (rand > 2 && rand <= 3) {
+        computer_choise = 'stump';
+      }
+    }
+  </script>
+</body>
+
+</html>

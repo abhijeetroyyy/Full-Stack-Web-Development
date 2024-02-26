@@ -3,38 +3,46 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 * {
   margin: 0;
   padding: 0;
   font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
 }
+
 .navigation {
   display: flex;
   height: 80px;
   align-items: center;
   font-size: 14px;
+  box-shadow: inset;
 }
+
 .head-logo {
   height: 53px;
   width: 51px;
   padding-left: 50px;
 }
-.serchbar{
+
+.serchbar {
   padding-left: 25px;
 }
-.serch{
+
+.serch {
   width: 300px;
   height: 35px;
   /* border-radius: 5px; */
   border: 1px solid white;
 }
+
 ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
 }
+
 ul li {
   list-style-type: none;
   padding: 11px;
@@ -46,26 +54,31 @@ ul li {
 .svglogos {
   display: flex;
 }
-.downte{
+
+.downte {
   display: flex;
 }
-.profile{
+
+.profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
-padding-right: 25px;
-padding-left: 10px;
+  padding-right: 25px;
+  padding-left: 10px;
 }
-.svglogos .profile svg{
+
+.svglogos .profile svg {
   height: 24px;
-width: 24px;
+  width: 24px;
 }
-.body-img{
+
+.body-img {
   height: 370px;
   width: 100%;
   padding: 20px 0px 15px;
 }
-.h4-headings h4{
+
+.h4-headings h4 {
   margin: 50px 0px 10px 30px;
   font-size: 28.8px;
   color: #3E4152;
@@ -73,30 +86,55 @@ width: 24px;
   word-spacing: 10px;
   letter-spacing: 5px;
 }
-.cont_img{
+
+.cont_img {
   width: 240.6px;
   height: 302.5px;
   display: flex;
   padding: 20px 0px 15px;
   margin-top: 35px;
 }
-.cont-image{
+
+.cont-image {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.cont-image img{
+
+.cont-image img {
   width: 229.6px;
   height: 300px;
 }
-.footer{
+
+.footer {
   display: flex;
   justify-content: center;
 }
-.first_footer{
+
+.first_footer {
   height: 428px;
   width: 1080px;
   border: 2px solid black;
   display: flex;
+}
+
+.one-foot-footer {
+  border: 2px solid black;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.two-foot {
+  width: 29%;
+}
+
+.one-foot-footer p ol {
+  list-style-type: none;
+}
+ol{
+  list-style: none;
+    display: flex;
+    flex-direction: column;
 }

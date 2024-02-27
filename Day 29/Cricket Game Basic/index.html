@@ -20,71 +20,30 @@
   <h1>Bat Ball Stump Game</h1>
   <div class="button-container">
     <button class="butt" onclick="
-        const user_choise_message=`bat`;
-        genaratecomputerchoise();
-        let  result_message;
-        if(computer_choise===`bat`){
-        result_message=(`its a tie`);
-        }
-        else if(computer_choise===`stump`){
-        result_message=('computer has won');
-        }
-        else if(computer_choise===`ball`){
-        result_message=('you have won');
-        }
+      const user_choise_message=`bat`;
+        let computer_choise = genaratecomputerchoise();
+        let  result_message = getresult(user_choise_message,computer_choise);
         alert(`you have chossen ${user_choise_message}  and the result is ${result_message}`);
 
         ">
       Bat
     </button>
     <button class="butt" onclick="
-        const user_choise_messagee=`ball`;
-        genaratecomputerchoise();
-        if(computer_choise===`bat`){
-        result_message=(`computer have won`);
-        }
-        else if(computer_choise===`stump`){
-        result_message=('you have won');
-        }
-        else if(computer_choise===`ball`){
-        result_message=('its a tie');
-        }
+        user_choise_message=`ball`;
+        computer_choise = genaratecomputerchoise();
+        result_message = getresult(user_choise_message,computer_choise);
         alert(`you have chossen ${user_choise_message} and the result is ${result_message}`);
 
         ">Ball</button>
     <button class="butt" onclick="
         user_choise_message=`Stump`;
-        genaratecomputerchoise();
-        if(computer_choise===`bat`){
-        result_message=(`user have won`);
-        }
-        else if(computer_choise===`stump`){
-        result_message=('Its a tie');
-        }
-        else if(computer_choise===`ball`){
-        result_message=('computer has won');
-        }
+        computer_choise=genaratecomputerchoise();
+        result_message = getresult(user_choise_message,computer_choise);
         alert(`you have chossen ${user_choise_message}  and the result is ${result_message}`);
 
         ">Stump</button>
   </div>
-  <script>
-    let computer_choise;
-    function genaratecomputerchoise() {
-      let rand = Math.random() * 3;
-
-      if (rand > 0 && rand <= 1) {
-        computer_choise = 'bat';
-      }
-      else if (rand > 1 && rand <= 2) {
-        computer_choise = 'ball';
-
-      }
-      else if (rand > 2 && rand <= 3) {
-        computer_choise = 'stump';
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

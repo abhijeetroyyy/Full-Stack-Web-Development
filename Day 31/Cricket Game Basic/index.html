@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket Game</title>
+</head>
+<style>
+  body {
+    text-align: center;
+  }
+
+  .butt {
+    margin: 5px;
+  }
+</style>
+
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <div class="button-container">
+    <button class="butt" onclick="
+      const user_choise_message=`bat`;
+        let computer_choise = genaratecomputerchoise();
+        let  result_message = getresult(user_choise_message,computer_choise);
+        showresult(user_choise_message,computer_choise, result_message);
+        ">
+      Bat
+    </button>
+    <button class="butt" onclick="
+        user_choise_message=`ball`;
+        computer_choise = genaratecomputerchoise();
+        result_message = getresult(user_choise_message,computer_choise);
+        showresult(user_choise_message,computer_choise, result_message);
+        ">Ball</button>
+    <button class="butt" onclick="
+        user_choise_message=`Stump`;
+        computer_choise=genaratecomputerchoise();
+        result_message = getresult(user_choise_message,computer_choise);
+        showresult(user_choise_message,computer_choise, result_message);
+        ">Stump</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

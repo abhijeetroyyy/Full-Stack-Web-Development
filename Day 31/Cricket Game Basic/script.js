@@ -1,13 +1,20 @@
-let score = {
-  win: 0,
-  lost: 0,
-  tie: 0,
-  displayscore:function(){
+let scorestr = localStorage.getItem('score');
+let score;
+resetscore(scorestr);
+function resetscore(scorestr) {
+
+  score = scorestr ? JSON.parse(scorestr) : {
+    win: 0,
+    lost: 0,
+    tie: 0,
+  };
+  score.displayscore = function () {
     return `Number of matches won:- ${score.win} ,
     Number of matches lost:- ${score.lost} ,
     Number of matches  drawn or tied:- ${score.tie}`
   }
-};
+}
+
 function genaratecomputerchoise() {
   let computer_choise;
   let rand = Math.random() * 3;
@@ -69,9 +76,13 @@ function getresult(usermove, compurtermove) {
   }
 }
 function showresult(usermove, computermove, result) {
-  // console.log(score);
-  alert(`  You have chossen ${usermove}
-  Computer choosed ${computermove}
-  And you have ${result} the match
-  ${score.displayscore()}`);
+  localStorage.setItem('score', JSON.stringify(score));
+  document.querySelector('#user-move').innerText = `You have chossen ${usermove}`;
+  document.querySelector('#computer-move').innerText = `Computer choosed ${computermove}`;
+  document.querySelector('#result').innerText = `And you have ${result}`;
+  document.querySelector('#score').innerText = `the match ${score.displayscore()}`;
+  // alert(`  You have chossen ${usermove}
+  // Computer choosed ${computermove}
+  // And you have ${result} the match
+  // ${score.displayscore()}`);
 }

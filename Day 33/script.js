@@ -24,6 +24,6 @@ document.querySelector('#Time').innerText = datetime();
 let clicked = 0;
 function buttonclicked() {
     let buttonn = document.querySelector('#my-button');
-    clicked = clicked + 5;
+    clicked++;
     buttonn.innerHTML = clicked;
 }

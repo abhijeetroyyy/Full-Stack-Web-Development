@@ -21,9 +21,22 @@ function datetime() {
 }
 document.querySelector('#Time').innerText = datetime();
 
-let clicked = 0;
+let clicked = localStorage.getItem('clicked') || 0;
 function buttonclicked() {
-    let buttonn = document.querySelector('#my-button');
     clicked++;
-    buttonn.innerHTML = clicked;
+    localStorage.setItem('clicked', clicked);
+    updatebutton();
 }
+function updatebutton() {
+    let button = document.querySelector('#my-button');
+    if (clicked % 2 == 0) {
+        button.classList.remove('js-odd');
+        button.classList.add('js-even');
+    }
+    else {
+        button.classList.remove('js-even');
+        button.classList.add('js-odd');
+    }
+    button.innerHTML = clicked;
+}
+updatebutton();

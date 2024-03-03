@@ -22,8 +22,7 @@ function datetime() {
 document.querySelector('#Time').innerText = datetime();
 
 let clicked = localStorage.getItem('clicked') || 0;
-function buttonclicked() {
-<<<<<<< HEAD
+function buttonclicked(){
     clicked++;
     localStorage.setItem('clicked', clicked);
     updatebutton();
@@ -41,9 +40,3 @@ function updatebutton() {
     button.innerHTML = clicked;
 }
 updatebutton();
-=======
-    let buttonn = document.querySelector('#my-button');
-    clicked++;
-    buttonn.innerHTML = clicked;
-}
->>>>>>> bc070f750ca1f2863a4263b78878a419f63af489

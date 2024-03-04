@@ -1,4 +1,4 @@
-let scoreStr = localStorage.getItem('Score');
+let scoreStr = localStorage.getItem(`Score`);
     let score;
     resetScore(scoreStr);
 

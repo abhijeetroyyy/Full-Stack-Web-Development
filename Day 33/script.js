@@ -22,7 +22,6 @@ function datetime() {
 document.querySelector('#Time').innerText = datetime();
 
 let clicked = localStorage.getItem('clicked') || 0;
-function buttonclicked(){
 function buttonclicked() {
     clicked++;
     localStorage.setItem('clicked', clicked);
